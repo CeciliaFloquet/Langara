@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Lab9</title>
+
+  <script src="ex9.js" type="text/javascript" defer></script>
+  <style>
+   div {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+  </style>
+ </head>
+ <body>
+ <div>
+  <h1>Welcome to the CPSC 1045 Zoo!</h1>
+  <p>Please add an animal to the zoo by filling out the following fields</p>
+   <p>Animal Name: <input id="animalName" type="text"></p>
+  <p>Animal Type: <input id="animalType" type="text"></p>
+   <p>Animal Gender: 
+		<input  type="radio" name="gender" value = "Male" >Male
+		<input type="radio"name="gender"  value = "Female" >Female
+   </p>
+    <button id= "addAnimal" type=" button" onclick="addAnimal()">Add Animal</button>
+	
+	<ul id="display">
+  </div> 
+ </body>
+</html>

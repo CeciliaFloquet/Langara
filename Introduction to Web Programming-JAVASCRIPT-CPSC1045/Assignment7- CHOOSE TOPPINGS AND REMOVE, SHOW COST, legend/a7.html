@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Assignment7</title>
+		<script src="a7.js" type="text/javascript" defer></script>
+		<style>
+			div{
+				border:5px;
+			}
+			fieldset{
+			margin-right:60%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CPSC 1045 Bubble Tea Menu</h1>
+		<p> Tea
+		<select id="choseTea"> 
+			<option value="black"> Black</option>
+			<option value="green"> Green</option>
+			<option value="red"> Red</option>
+		</select>
+		</p>
+		<div>
+		<fieldset>
+		<legend>Select your toppings</legend>
+			<p> Toppings
+			<select id="toppings"> 
+				<option value="Grass Jelly">Grass Jelly</option>
+				<option value="Coconut"> Coconut</option>
+				<option value="Pearls"> Pearls</option>
+				<option value="Mango Stars"> Mango Stars</option>
+			</select>
+			</p>
+			
+			<p>
+			<button id= "add" type=" button" onclick="addTopping()">Add Topping</button>
+			<button id= "remove" type=" button" onclick="removeTopping()">Remove Topping</button>
+			</p>
+			
+			<p id="currentToppings">Current Toppings</p>
+			<ul id="displaytoppings">
+			
+			</ul>
+			</fieldset>
+		</div>
+		
+		<p>Would you like Milk Tea?
+		<select id="milk"> 
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+				
+			</select>
+		
+		</p>
+		<button id= "calculate" type=" button" onclick="calculateCost()">Calculate Cost</button>
+		<h2>Total Cost:</h2>
+		<h2 id="price"></h2>
+	</body>
+</html>

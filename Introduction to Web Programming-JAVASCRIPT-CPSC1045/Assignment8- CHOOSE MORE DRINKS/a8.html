@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Assignment 8</title>
+		<script src="a8.js" type="text/javascript" defer></script>
+		<style>
+			table, td, th, div{
+				 border: 1px solid black;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Tea ordering system</h1>
+			<p> Tea
+			<select id="choseTea"> 
+			<option value=""> </option>
+				<option value="black"> Black</option>
+				<option value="green"> Green</option>
+				<option value="red"> Red</option>
+			</select>
+		</p>
+			
+			<p> Toppings
+			<select id="toppings"> 
+				<option value=""> </option>
+				<option value="Grass Jelly">Grass Jelly</option>
+				<option value="Coconut"> Coconut</option>
+				<option value="Pearls"> Pearls</option>
+				<option value="Mango Stars"> Mango Stars</option>
+			</select>
+			</p>
+			
+			<p>
+			<button id= "add" type=" button" onclick="addTopping()">Add Topping</button>
+			<button id= "remove" type=" button" onclick="removeTopping()">Remove Topping</button>
+			</p>
+			
+			<p id="currentToppings">Current Toppings</p>
+			<ul id="displaytoppings"> </ul>
+			<p>Milk
+				<select id="milk"> 
+					<option value=""> </option>
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</select>
+			</p>
+			<h1>Your Order</h1>
+		<p>
+			<button id= "addDrink" type=" button" onclick="addDrink()">Add Drink</button>
+			<button id= "removeDrink" type=" button" onclick="removeDrink()">Remove Drink</button>
+			<button id= "reset" type=" button" onclick="resetOrder()">reset Order</button>
+		</p>
+			
+			
+			<table id="myTable">
+			<th>#</th>
+			<th>Tea</th>
+			<th>Milk</th>
+			<th>Toppings</th>
+			<th>cost</th>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>Total</td>
+				<td></td>
+				<td id="cost">$</td>
+			</tr>
+			</table>
+			
+		</div>
+	
+	
+	
+
+		
+		
+	</body>
+</html>

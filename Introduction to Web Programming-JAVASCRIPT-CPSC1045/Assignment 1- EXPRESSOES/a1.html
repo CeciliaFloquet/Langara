@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 2</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+		<div id="mathProblem">
+			<!-- leave this div empty!-->
+		</div>
+		
+		<script>
+			var myDiv = document.getElementById("mathProblem");
+			//fill in the code here to generate two random numbers
+			var numOne = Math.ceil( Math.random()* 9);
+			var numTwo = Math.floor( Math.random()* 9);
+			//then write your world problem!
+
+			document.getElementById("mathProblem").innerHTML = "Question: Cecilia won " + numOne +" bags and donates " + numTwo + " of them. How many bags are left?";
+
+			myDiv.innerHTML += "\n\n\n" + ("Anwer: " + (numOne - numTwo));
+			
+		</script>
+	</body>
+</html>

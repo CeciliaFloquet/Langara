@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Lab8</title>
+
+  <script src="ex8.js" type="text/javascript" defer></script>
+  <style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+  </style>
+ </head>
+ <body>
+  <h1>Instructor's Grade Book</h1>
+  <p>Enter the student's name:
+  <input type="text" id="name">
+  </p> 
+   
+   <br>
+   <p>Enter the student's grade:
+   <select id="grade">
+   <option value="A">A</option>
+   <option value="B">B</option>
+   <option value="C">C</option>
+   <option value="D">D</option>
+   <option value="E">E</option>
+   <option value="F">F</option>
+   </select>
+   </p>
+   <button id= "submitGrade" type=" button" onclick="submitGrade()">Submit Grade</button>
+   <button id= "remove" type=" button" onclick="remove()">Remove</button>
+   <hr>
+   <h3>Grade Book</h3>
+  
+   
+   <table id="displayGrade"> 
+		
+   </table>
+   <hr>
+   <button id= "updateSummary" type=" button" onclick="updateSummary()">Update Summary</button>
+   <h3>Class Summary</h3>
+   <h3 id="displayClass"></h3>
+   
+  </div> 
+ </body>
+</html>
